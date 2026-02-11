@@ -1,7 +1,7 @@
 class rovar:
 
     def __init__(self) -> None:
-        #Test with all lowercase consonants: (b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, x, z).
+        #Test with all lowercase consonants: (b, c, d, f, g, h, j, k, l, m, n, p, q, r, s, t, v, w, x, z)
         #self._LOWER_CONSTANTS = "bcdfhjklmnpqrstvwxz" 
         self._LOWER_CONSTANTS = "bcdfghjklmnpqrstvwxz" # add 'g'
         
