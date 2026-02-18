@@ -9,9 +9,10 @@ from Task1_Rover import rovar
 
 class test_string(unittest.TestCase):
 
-    def setUp(self):
+    def setUp(self): 
         '''
             Set up shared resources = Class instance to access rover class methods
+            Automatically execute initialization code before every single test method starts.
         '''
         self.rv = rovar()
 #-------------------------------------------------------------------------------------------------------#
@@ -88,3 +89,15 @@ class test_string(unittest.TestCase):
 if __name__ == '__main__':
     print("***********START OF All TEST CASES RESULTS SHOWN BELOW**************")
     unittest.main(verbosity = 2)
+
+#-----------------------------------------------------------------------------------------------------------#
+'''
+    Step 1: Test Discovery (Scanning)
+    looks for any Class that inherits from unittest.TestCase.
+
+    Step 2: Individual Test Preparation (The Loop)
+    For every single test method found, the framework creates a brand new instance of your class
+    
+    Step 3: Execution and Assertion
+    The framework executes the logic inside the specific test_ method
+'''
