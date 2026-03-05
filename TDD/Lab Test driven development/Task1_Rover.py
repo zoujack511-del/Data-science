@@ -23,7 +23,7 @@ class rovar:
             if char in self._LOWER_CONSTANTS:
                 encoded.append(char + 'o' + char)
             elif char in self._UPPER_CONSTANTS:
-                encoded.append(char + 'o' + char)
+                encoded.append(char + 'o' + char) # o is in lowercase here
             else:
                 encoded.append(char)
         return ''.join(encoded)

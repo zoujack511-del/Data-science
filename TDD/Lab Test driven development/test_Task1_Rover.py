@@ -9,7 +9,7 @@ from Task1_Rover import rovar
 
 class test_string(unittest.TestCase):
 
-    def setUp(self): 
+    def setUp(self): # a special unittest method runs before every test method
         '''
             Set up shared resources = Class instance to access rover class methods
             Automatically execute initialization code before every single test method starts.

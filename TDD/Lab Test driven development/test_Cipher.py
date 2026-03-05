@@ -1,7 +1,8 @@
 import unittest
 from Cipher import pattern_cipher # Cipher Rules
 
-class TestPatternCipher(unittest.TestCase):
+class TestPatternCipher(unittest.TestCase): # inherit unittest, a built-in Python framework used 
+                                            # to write and run automated tests for code.
 
 # 1.-----If the input is empty ("") or None, it is returned unchanged ------
     def test_none_input(self):
@@ -45,5 +46,5 @@ class TestPatternCipher(unittest.TestCase):
 
 if __name__ == '__main__':
     print("***********START OF All TEST CASES RESULTS SHOWN BELOW**************")
-    unittest.main(verbosity = 2)
+    unittest.main(verbosity = 2) # Verbosity shows detailed test information.
 
